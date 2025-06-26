@@ -36,6 +36,52 @@ struct StakeProgressView: View {
                         Spacer()
                     }
                     
+                    Rectangle()
+                        .fill(Color(red: 25/255, green: 49/255, blue: 72/255))
+                        .overlay {
+                            VStack {
+                                HStack {
+                                    VStack(alignment: .leading) {
+                                        Text("Current points")
+                                            .Poppins(size: 14, color: Color(red: 183/255, green: 191/255, blue: 199/255))
+                                        
+                                        Text("275 / 500")
+                                            .PoppinsBold(size: 24)
+                                    }
+                                    
+                                    Spacer()
+                                    
+                                    Circle()
+                                        .fill(Color(red: 28/255, green: 62/255, blue: 99/255))
+                                        .frame(width: 64, height: 64)
+                                        .overlay {
+                                            Circle()
+                                                .stroke(Color(red: 45/255, green: 115/255, blue: 211/255), lineWidth: 4)
+                                                .frame(width: 48, height: 48)
+                                                .overlay {
+                                                    Text("55%")
+                                                        .PoppinsBold(size: 16)
+                                                }
+                                        }
+                                }
+                                .padding(.horizontal, 10)
+                                
+                                AchievementProgressBar(completedCount: 3)
+                                
+                                HStack {
+                                    Text("Each achievement = 25 points")
+                                        .Poppins(size: 14, color: Color(red: 183/255, green: 191/255, blue: 199/255))
+                                        .padding(.leading, 10)
+                                    
+                                    Spacer()
+                                }
+                            }
+                            .padding(.horizontal)
+                        }
+                        .frame(height: 150)
+                        .cornerRadius(16)
+                        .padding(.horizontal)
+                    
                     //MARK: - 1
                     VStack {
                         HStack {
@@ -240,24 +286,25 @@ struct StakeProgressView: View {
 struct AchievementProgressBar: View {
     let completedCount: Int
     let maxCount: Int = 10
-    let fullWidth: CGFloat = UIScreen.main.bounds.width > 900 ? 960 : (UIScreen.main.bounds.width > 600 ? 760 : 340)
+    let fullWidth: CGFloat = UIScreen.main.bounds.width > 900 ? 960 : (UIScreen.main.bounds.width > 600 ? 760 : 300)
     let pointsPerAchievement: CGFloat = 10
     
     var body: some View {
         ZStack(alignment: .leading) {
             Rectangle()
-                .fill(Color(red: 33/255, green: 37/255, blue: 54/255))
+                .fill(Color(red: 46/255, green: 69/255, blue: 90/255))
                 .frame(width: fullWidth, height: 10)
                 .cornerRadius(10)
                 .padding(.horizontal)
             
             Rectangle()
-                .fill(Color(red: 224/255, green: 187/255, blue: 75/255))
+                .fill(Color(red: 45/255, green: 115/255, blue: 211/255))
                 .frame(width: min(fullWidth, CGFloat(completedCount) * pointsPerAchievement), height: 10)
                 .cornerRadius(10)
                 .padding(.horizontal, 5)
                 .animation(.easeInOut, value: completedCount)
         }
+        
     }
 }
 

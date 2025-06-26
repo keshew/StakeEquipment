@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct StakeQuizView: View {
-    @StateObject var StakeQuizModel =  StakeQuizViewModel()
+    @StateObject var stakeQuizModel =  StakeQuizViewModel()
 
     var body: some View {
         Text("Hey, Genius")
