@@ -6,17 +6,69 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		869821222E0D37050002F028 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8698210F2E0D37050002F028 /* Preview Assets.xcassets */; };
+		869821232E0D37050002F028 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 869821162E0D37050002F028 /* Poppins-Bold.ttf */; };
+		869821242E0D37050002F028 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 869821172E0D37050002F028 /* Poppins-Regular.ttf */; };
+		869821252E0D37050002F028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8698211E2E0D37050002F028 /* Assets.xcassets */; };
+		869821272E0D37050002F028 /* StakeTextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869821112E0D37050002F028 /* StakeTextExtension.swift */; };
+		869821282E0D37050002F028 /* StakeCustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869821142E0D37050002F028 /* StakeCustomButtons.swift */; };
+		869821292E0D37050002F028 /* StakeOnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8698211A2E0D37050002F028 /* StakeOnboardingModel.swift */; };
+		8698212A2E0D37050002F028 /* StakeOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8698211B2E0D37050002F028 /* StakeOnboardingView.swift */; };
+		8698212B2E0D37050002F028 /* StakeOnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8698211C2E0D37050002F028 /* StakeOnboardingViewModel.swift */; };
+		8698212C2E0D37050002F028 /* StakeEquipmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869821202E0D37050002F028 /* StakeEquipmentApp.swift */; };
+		869821382E0D37720002F028 /* StakeHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869821342E0D37720002F028 /* StakeHomeModel.swift */; };
+		869821392E0D37720002F028 /* StakeHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869821352E0D37720002F028 /* StakeHomeView.swift */; };
+		8698213A2E0D37720002F028 /* StakeHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869821362E0D37720002F028 /* StakeHomeViewModel.swift */; };
+		86CE36182E0DCD02001F0B6D /* StakeSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE36142E0DCD02001F0B6D /* StakeSettingsModel.swift */; };
+		86CE36192E0DCD02001F0B6D /* StakeSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE36152E0DCD02001F0B6D /* StakeSettingsView.swift */; };
+		86CE361A2E0DCD02001F0B6D /* StakeSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE36162E0DCD02001F0B6D /* StakeSettingsViewModel.swift */; };
+		86CE36262E0DDCC9001F0B6D /* StakeQuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE36222E0DDCC9001F0B6D /* StakeQuizModel.swift */; };
+		86CE36272E0DDCC9001F0B6D /* StakeQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE36232E0DDCC9001F0B6D /* StakeQuizView.swift */; };
+		86CE36282E0DDCC9001F0B6D /* StakeQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE36242E0DDCC9001F0B6D /* StakeQuizViewModel.swift */; };
+		86CE36342E0DDCD7001F0B6D /* StakeTabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE36302E0DDCD7001F0B6D /* StakeTabBarModel.swift */; };
+		86CE36352E0DDCD7001F0B6D /* StakeTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE36312E0DDCD7001F0B6D /* StakeTabBarView.swift */; };
+		86CE36362E0DDCD7001F0B6D /* StakeTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE36322E0DDCD7001F0B6D /* StakeTabBarViewModel.swift */; };
+		86FF53442E0D6C9F00B6A80E /* StakeProgressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF53402E0D6C9F00B6A80E /* StakeProgressModel.swift */; };
+		86FF53452E0D6C9F00B6A80E /* StakeProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF53412E0D6C9F00B6A80E /* StakeProgressView.swift */; };
+		86FF53462E0D6C9F00B6A80E /* StakeProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF53422E0D6C9F00B6A80E /* StakeProgressViewModel.swift */; };
+		86FF53582E0D752400B6A80E /* StakeGuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF53542E0D752400B6A80E /* StakeGuideModel.swift */; };
+		86FF53592E0D752400B6A80E /* StakeGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF53552E0D752400B6A80E /* StakeGuideView.swift */; };
+		86FF535A2E0D752400B6A80E /* StakeGuideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF53562E0D752400B6A80E /* StakeGuideViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		869820E02E0D36160002F028 /* StakeEquipment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StakeEquipment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8698210F2E0D37050002F028 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		869821112E0D37050002F028 /* StakeTextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeTextExtension.swift; sourceTree = "<group>"; };
+		869821142E0D37050002F028 /* StakeCustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeCustomButtons.swift; sourceTree = "<group>"; };
+		869821162E0D37050002F028 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		869821172E0D37050002F028 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		8698211A2E0D37050002F028 /* StakeOnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeOnboardingModel.swift; sourceTree = "<group>"; };
+		8698211B2E0D37050002F028 /* StakeOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeOnboardingView.swift; sourceTree = "<group>"; };
+		8698211C2E0D37050002F028 /* StakeOnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeOnboardingViewModel.swift; sourceTree = "<group>"; };
+		8698211E2E0D37050002F028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8698211F2E0D37050002F028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		869821202E0D37050002F028 /* StakeEquipmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeEquipmentApp.swift; sourceTree = "<group>"; };
+		869821342E0D37720002F028 /* StakeHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeHomeModel.swift; sourceTree = "<group>"; };
+		869821352E0D37720002F028 /* StakeHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeHomeView.swift; sourceTree = "<group>"; };
+		869821362E0D37720002F028 /* StakeHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeHomeViewModel.swift; sourceTree = "<group>"; };
+		86CE36142E0DCD02001F0B6D /* StakeSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeSettingsModel.swift; sourceTree = "<group>"; };
+		86CE36152E0DCD02001F0B6D /* StakeSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeSettingsView.swift; sourceTree = "<group>"; };
+		86CE36162E0DCD02001F0B6D /* StakeSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeSettingsViewModel.swift; sourceTree = "<group>"; };
+		86CE36222E0DDCC9001F0B6D /* StakeQuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeQuizModel.swift; sourceTree = "<group>"; };
+		86CE36232E0DDCC9001F0B6D /* StakeQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeQuizView.swift; sourceTree = "<group>"; };
+		86CE36242E0DDCC9001F0B6D /* StakeQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeQuizViewModel.swift; sourceTree = "<group>"; };
+		86CE36302E0DDCD7001F0B6D /* StakeTabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeTabBarModel.swift; sourceTree = "<group>"; };
+		86CE36312E0DDCD7001F0B6D /* StakeTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeTabBarView.swift; sourceTree = "<group>"; };
+		86CE36322E0DDCD7001F0B6D /* StakeTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeTabBarViewModel.swift; sourceTree = "<group>"; };
+		86FF53402E0D6C9F00B6A80E /* StakeProgressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeProgressModel.swift; sourceTree = "<group>"; };
+		86FF53412E0D6C9F00B6A80E /* StakeProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeProgressView.swift; sourceTree = "<group>"; };
+		86FF53422E0D6C9F00B6A80E /* StakeProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeProgressViewModel.swift; sourceTree = "<group>"; };
+		86FF53542E0D752400B6A80E /* StakeGuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeGuideModel.swift; sourceTree = "<group>"; };
+		86FF53552E0D752400B6A80E /* StakeGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeGuideView.swift; sourceTree = "<group>"; };
+		86FF53562E0D752400B6A80E /* StakeGuideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeGuideViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		869820E22E0D36160002F028 /* StakeEquipment */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = StakeEquipment;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		869820DD2E0D36160002F028 /* Frameworks */ = {
@@ -32,7 +84,7 @@
 		869820D72E0D36160002F028 = {
 			isa = PBXGroup;
 			children = (
-				869820E22E0D36160002F028 /* StakeEquipment */,
+				869821212E0D37050002F028 /* StakeEquipment */,
 				869820E12E0D36160002F028 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +95,146 @@
 				869820E02E0D36160002F028 /* StakeEquipment.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		869821102E0D37050002F028 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8698210F2E0D37050002F028 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		869821122E0D37050002F028 /* StakeTextExtension */ = {
+			isa = PBXGroup;
+			children = (
+				869821112E0D37050002F028 /* StakeTextExtension.swift */,
+			);
+			path = StakeTextExtension;
+			sourceTree = "<group>";
+		};
+		869821132E0D37050002F028 /* StakeExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				869821122E0D37050002F028 /* StakeTextExtension */,
+			);
+			path = StakeExtensions;
+			sourceTree = "<group>";
+		};
+		869821152E0D37050002F028 /* StakeCustomButtons */ = {
+			isa = PBXGroup;
+			children = (
+				869821142E0D37050002F028 /* StakeCustomButtons.swift */,
+			);
+			path = StakeCustomButtons;
+			sourceTree = "<group>";
+		};
+		869821182E0D37050002F028 /* StakeFonts */ = {
+			isa = PBXGroup;
+			children = (
+				869821162E0D37050002F028 /* Poppins-Bold.ttf */,
+				869821172E0D37050002F028 /* Poppins-Regular.ttf */,
+			);
+			path = StakeFonts;
+			sourceTree = "<group>";
+		};
+		869821192E0D37050002F028 /* StakeHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				869821152E0D37050002F028 /* StakeCustomButtons */,
+				869821182E0D37050002F028 /* StakeFonts */,
+			);
+			path = StakeHelpers;
+			sourceTree = "<group>";
+		};
+		8698211D2E0D37050002F028 /* StakeOnboardingModule */ = {
+			isa = PBXGroup;
+			children = (
+				8698211A2E0D37050002F028 /* StakeOnboardingModel.swift */,
+				8698211B2E0D37050002F028 /* StakeOnboardingView.swift */,
+				8698211C2E0D37050002F028 /* StakeOnboardingViewModel.swift */,
+			);
+			path = StakeOnboardingModule;
+			sourceTree = "<group>";
+		};
+		869821212E0D37050002F028 /* StakeEquipment */ = {
+			isa = PBXGroup;
+			children = (
+				86CE36332E0DDCD7001F0B6D /* StakeTabBarModule */,
+				86CE36252E0DDCC9001F0B6D /* StakeQuizModule */,
+				86CE36172E0DCD02001F0B6D /* StakeSettingsModule */,
+				86FF53572E0D752400B6A80E /* StakeGuideModule */,
+				86FF53432E0D6C9F00B6A80E /* StakeProgressModule */,
+				869821372E0D37720002F028 /* StakeHomeModule */,
+				869821132E0D37050002F028 /* StakeExtensions */,
+				869821192E0D37050002F028 /* StakeHelpers */,
+				8698211D2E0D37050002F028 /* StakeOnboardingModule */,
+				8698211E2E0D37050002F028 /* Assets.xcassets */,
+				8698211F2E0D37050002F028 /* Info.plist */,
+				869821202E0D37050002F028 /* StakeEquipmentApp.swift */,
+				869821102E0D37050002F028 /* Preview Content */,
+			);
+			path = StakeEquipment;
+			sourceTree = "<group>";
+		};
+		869821372E0D37720002F028 /* StakeHomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				869821342E0D37720002F028 /* StakeHomeModel.swift */,
+				869821352E0D37720002F028 /* StakeHomeView.swift */,
+				869821362E0D37720002F028 /* StakeHomeViewModel.swift */,
+			);
+			path = StakeHomeModule;
+			sourceTree = "<group>";
+		};
+		86CE36172E0DCD02001F0B6D /* StakeSettingsModule */ = {
+			isa = PBXGroup;
+			children = (
+				86CE36142E0DCD02001F0B6D /* StakeSettingsModel.swift */,
+				86CE36152E0DCD02001F0B6D /* StakeSettingsView.swift */,
+				86CE36162E0DCD02001F0B6D /* StakeSettingsViewModel.swift */,
+			);
+			path = StakeSettingsModule;
+			sourceTree = "<group>";
+		};
+		86CE36252E0DDCC9001F0B6D /* StakeQuizModule */ = {
+			isa = PBXGroup;
+			children = (
+				86CE36222E0DDCC9001F0B6D /* StakeQuizModel.swift */,
+				86CE36232E0DDCC9001F0B6D /* StakeQuizView.swift */,
+				86CE36242E0DDCC9001F0B6D /* StakeQuizViewModel.swift */,
+			);
+			path = StakeQuizModule;
+			sourceTree = "<group>";
+		};
+		86CE36332E0DDCD7001F0B6D /* StakeTabBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				86CE36302E0DDCD7001F0B6D /* StakeTabBarModel.swift */,
+				86CE36312E0DDCD7001F0B6D /* StakeTabBarView.swift */,
+				86CE36322E0DDCD7001F0B6D /* StakeTabBarViewModel.swift */,
+			);
+			path = StakeTabBarModule;
+			sourceTree = "<group>";
+		};
+		86FF53432E0D6C9F00B6A80E /* StakeProgressModule */ = {
+			isa = PBXGroup;
+			children = (
+				86FF53402E0D6C9F00B6A80E /* StakeProgressModel.swift */,
+				86FF53412E0D6C9F00B6A80E /* StakeProgressView.swift */,
+				86FF53422E0D6C9F00B6A80E /* StakeProgressViewModel.swift */,
+			);
+			path = StakeProgressModule;
+			sourceTree = "<group>";
+		};
+		86FF53572E0D752400B6A80E /* StakeGuideModule */ = {
+			isa = PBXGroup;
+			children = (
+				86FF53542E0D752400B6A80E /* StakeGuideModel.swift */,
+				86FF53552E0D752400B6A80E /* StakeGuideView.swift */,
+				86FF53562E0D752400B6A80E /* StakeGuideViewModel.swift */,
+			);
+			path = StakeGuideModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +251,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				869820E22E0D36160002F028 /* StakeEquipment */,
 			);
 			name = StakeEquipment;
 			packageProductDependencies = (
@@ -109,6 +298,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				869821222E0D37050002F028 /* Preview Assets.xcassets in Resources */,
+				869821232E0D37050002F028 /* Poppins-Bold.ttf in Resources */,
+				869821242E0D37050002F028 /* Poppins-Regular.ttf in Resources */,
+				869821252E0D37050002F028 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +312,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				869821272E0D37050002F028 /* StakeTextExtension.swift in Sources */,
+				86CE36262E0DDCC9001F0B6D /* StakeQuizModel.swift in Sources */,
+				86CE36272E0DDCC9001F0B6D /* StakeQuizView.swift in Sources */,
+				86CE36282E0DDCC9001F0B6D /* StakeQuizViewModel.swift in Sources */,
+				869821282E0D37050002F028 /* StakeCustomButtons.swift in Sources */,
+				869821292E0D37050002F028 /* StakeOnboardingModel.swift in Sources */,
+				86FF53442E0D6C9F00B6A80E /* StakeProgressModel.swift in Sources */,
+				86FF53452E0D6C9F00B6A80E /* StakeProgressView.swift in Sources */,
+				86FF53462E0D6C9F00B6A80E /* StakeProgressViewModel.swift in Sources */,
+				8698212A2E0D37050002F028 /* StakeOnboardingView.swift in Sources */,
+				8698212B2E0D37050002F028 /* StakeOnboardingViewModel.swift in Sources */,
+				86FF53582E0D752400B6A80E /* StakeGuideModel.swift in Sources */,
+				86CE36342E0DDCD7001F0B6D /* StakeTabBarModel.swift in Sources */,
+				86CE36352E0DDCD7001F0B6D /* StakeTabBarView.swift in Sources */,
+				86CE36362E0DDCD7001F0B6D /* StakeTabBarViewModel.swift in Sources */,
+				86FF53592E0D752400B6A80E /* StakeGuideView.swift in Sources */,
+				86FF535A2E0D752400B6A80E /* StakeGuideViewModel.swift in Sources */,
+				8698212C2E0D37050002F028 /* StakeEquipmentApp.swift in Sources */,
+				869821382E0D37720002F028 /* StakeHomeModel.swift in Sources */,
+				869821392E0D37720002F028 /* StakeHomeView.swift in Sources */,
+				8698213A2E0D37720002F028 /* StakeHomeViewModel.swift in Sources */,
+				86CE36182E0DCD02001F0B6D /* StakeSettingsModel.swift in Sources */,
+				86CE36192E0DCD02001F0B6D /* StakeSettingsView.swift in Sources */,
+				86CE361A2E0DCD02001F0B6D /* StakeSettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,11 +472,13 @@
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StakeEquipment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -267,6 +486,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.keshevv.StakeEquipment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -284,11 +507,13 @@
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StakeEquipment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,6 +521,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.keshevv.StakeEquipment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
