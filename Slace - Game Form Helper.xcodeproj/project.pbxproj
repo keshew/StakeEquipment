@@ -39,7 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		869820E02E0D36160002F028 /* StakeEquipment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StakeEquipment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		869820E02E0D36160002F028 /* Slace - Game Form Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slace - Game Form Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8698210F2E0D37050002F028 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		869821112E0D37050002F028 /* StakeTextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeTextExtension.swift; sourceTree = "<group>"; };
 		869821142E0D37050002F028 /* StakeCustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeCustomButtons.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		869820E12E0D36160002F028 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				869820E02E0D36160002F028 /* StakeEquipment.app */,
+				869820E02E0D36160002F028 /* Slace - Game Form Helper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,9 +259,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		869820DF2E0D36160002F028 /* StakeEquipment */ = {
+		869820DF2E0D36160002F028 /* Slace - Game Form Helper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 869820EE2E0D36170002F028 /* Build configuration list for PBXNativeTarget "StakeEquipment" */;
+			buildConfigurationList = 869820EE2E0D36170002F028 /* Build configuration list for PBXNativeTarget "Slace - Game Form Helper" */;
 			buildPhases = (
 				869820DC2E0D36160002F028 /* Sources */,
 				869820DD2E0D36160002F028 /* Frameworks */,
@@ -271,11 +271,11 @@
 			);
 			dependencies = (
 			);
-			name = StakeEquipment;
+			name = "Slace - Game Form Helper";
 			packageProductDependencies = (
 			);
 			productName = StakeEquipment;
-			productReference = 869820E02E0D36160002F028 /* StakeEquipment.app */;
+			productReference = 869820E02E0D36160002F028 /* Slace - Game Form Helper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -293,7 +293,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 869820DB2E0D36160002F028 /* Build configuration list for PBXProject "StakeEquipment" */;
+			buildConfigurationList = 869820DB2E0D36160002F028 /* Build configuration list for PBXProject "Slace - Game Form Helper" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -307,7 +307,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				869820DF2E0D36160002F028 /* StakeEquipment */,
+				869820DF2E0D36160002F028 /* Slace - Game Form Helper */,
 			);
 		};
 /* End PBXProject section */
@@ -554,7 +554,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		869820DB2E0D36160002F028 /* Build configuration list for PBXProject "StakeEquipment" */ = {
+		869820DB2E0D36160002F028 /* Build configuration list for PBXProject "Slace - Game Form Helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				869820EC2E0D36170002F028 /* Debug */,
@@ -563,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		869820EE2E0D36170002F028 /* Build configuration list for PBXNativeTarget "StakeEquipment" */ = {
+		869820EE2E0D36170002F028 /* Build configuration list for PBXNativeTarget "Slace - Game Form Helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				869820EF2E0D36170002F028 /* Debug */,
