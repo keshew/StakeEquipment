@@ -4,7 +4,14 @@ import SwiftUI
 struct StakeEquipmentApp: App {
     var body: some Scene {
         WindowGroup {
-            StakeOnboardingView()
+            if UserDefaultsManager().isFirstLaunch() {
+                StakeOnboardingView()
+            } else {
+                StakeTabBarView()
+                    .onAppear() {
+                        UserDefaultsManager().recordGameLaunchDate()
+                    }
+            }
         }
     }
 }

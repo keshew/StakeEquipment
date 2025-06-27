@@ -9,7 +9,7 @@ struct StakeOnboardingView: View {
             
             Image(stakeOnboardingModel.contact.arrayOfImageOnb[stakeOnboardingModel.currentIndex])
                 .resizable()
-                .frame(width: stakeOnboardingModel.currentIndex != 2 ? 360 : 280, height: stakeOnboardingModel.currentIndex != 2 ? 700 : 420)
+                .frame(width: stakeOnboardingModel.currentIndex != 2 ? UIScreen.main.bounds.width > 900 ? 560 : (UIScreen.main.bounds.width > 600 ? 460 : 360) : UIScreen.main.bounds.width > 900 ? 560 : (UIScreen.main.bounds.width > 600 ? 460 : 280), height: stakeOnboardingModel.currentIndex != 2 ? UIScreen.main.bounds.width > 900 ? 1000 : (UIScreen.main.bounds.width > 600 ? 800 : 700) : UIScreen.main.bounds.width > 900 ? 560 : (UIScreen.main.bounds.width > 600 ? 460 : 420))
                 .position(stakeOnboardingModel.currentIndex != 2 ? CGPoint(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2.1) : CGPoint(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 4))
             
             ScrollView(showsIndicators: false) {
@@ -48,7 +48,7 @@ struct StakeOnboardingView: View {
                                     stakeOnboardingModel.currentIndex += 1
                                 }
                             } else {
-                                
+                                stakeOnboardingModel.isTab = true
                             }
                         }) {
                             Rectangle()
@@ -77,10 +77,13 @@ struct StakeOnboardingView: View {
                             Color(red: 22/255, green: 42/255, blue: 58/255).blur(radius: 10)
                         }
                     )
-                    .padding(.top, stakeOnboardingModel.currentIndex != 2 ? 460 : 493)
+                    .padding(.top, stakeOnboardingModel.currentIndex != 2 ? UIScreen.main.bounds.width > 900 ? 1060 : (UIScreen.main.bounds.width > 600 ? 890 : (UIScreen.main.bounds.width > 430 ? 560 : 460)) : UIScreen.main.bounds.width > 900 ? 1050 : (UIScreen.main.bounds.width > 600 ? 890 : (UIScreen.main.bounds.width > 430 ? 560 : 493)))
                 }
             }
             .scrollDisabled(UIScreen.main.bounds.width > 380  ? true : false)
+        }
+        .fullScreenCover(isPresented: $stakeOnboardingModel.isTab) {
+            StakeTabBarView()
         }
     }
 }

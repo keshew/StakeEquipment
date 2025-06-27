@@ -3,8 +3,9 @@ import SwiftUI
 struct StakeProgressView: View {
     @StateObject var stakeProgressModel =  StakeProgressViewModel()
     @Environment(\.presentationMode) var presentationMode
+    let achievementsDone = [UserDefaultsManager().isAchievement1Done(), UserDefaultsManager().isAchievement2Done(), UserDefaultsManager().isAchievement3Done(), UserDefaultsManager().isAchievement4Done()]
     
-    let achievementsDone = [false, false, false, false]
+    let manager = UserDefaultsManager()
     var body: some View {
         ZStack {
             Color(red: 22/255, green: 42/255, blue: 57/255).ignoresSafeArea()
@@ -31,6 +32,7 @@ struct StakeProgressView: View {
                         
                         Text("Progress")
                             .PoppinsBold(size: 24)
+                            .padding(.trailing, 50)
                             
                         
                         Spacer()
@@ -42,10 +44,15 @@ struct StakeProgressView: View {
                             VStack {
                                 HStack {
                                     VStack(alignment: .leading) {
+                                        let pointsPerAchievement = 25
+                                        let currentPoints = achievementsDone.filter { $0 }.count * pointsPerAchievement
+                                        let maxPoints = 500
+                                     
+
                                         Text("Current points")
                                             .Poppins(size: 14, color: Color(red: 183/255, green: 191/255, blue: 199/255))
                                         
-                                        Text("275 / 500")
+                                        Text("\(currentPoints) / \(maxPoints)")
                                             .PoppinsBold(size: 24)
                                     }
                                     
@@ -59,14 +66,22 @@ struct StakeProgressView: View {
                                                 .stroke(Color(red: 45/255, green: 115/255, blue: 211/255), lineWidth: 4)
                                                 .frame(width: 48, height: 48)
                                                 .overlay {
-                                                    Text("55%")
-                                                        .PoppinsBold(size: 16)
+                                                    VStack {
+                                                        let pointsPerAchievement = 25
+                                                        let currentPoints = achievementsDone.filter { $0 }.count * pointsPerAchievement
+                                                        let maxPoints = 500
+                                                        let progressPercent = Int(Double(currentPoints) / Double(maxPoints) * 100)
+                                                        
+                                                        Text("\(progressPercent)%")
+                                                            .PoppinsBold(size: 16)
+                                                    }
                                                 }
                                         }
                                 }
                                 .padding(.horizontal, 10)
                                 
-                                AchievementProgressBar(completedCount: 3)
+                                let completedCount = achievementsDone.filter { $0 }.count
+                                AchievementProgressBar(completedCount: completedCount)
                                 
                                 HStack {
                                     Text("Each achievement = 25 points")
@@ -108,11 +123,11 @@ struct StakeProgressView: View {
                         
                         VStack(spacing: 15) {
                             let achievementsDone: [Bool] = [
-                                false,
-                                false,
-                                false,
-                                false,
-                                false
+                                manager.isAchievement1Done(),
+                                manager.isAchievement2Done(),
+                                manager.isAchievement3Done(),
+                                manager.isAchievement4Done(),
+                                manager.isAchievement5Done()
                             ]
                             ForEach(0..<stakeProgressModel.contact.arrayOfAchiev.count, id: \.self) { index in
                                 HStack {
@@ -159,10 +174,11 @@ struct StakeProgressView: View {
                                                 
                                                 if achievementsDone[index] {
                                                     Circle()
-                                                        .fill(Color(red: 100/255, green: 186/255, blue: 100/255))
+                                                        .fill(Color(red: 44/255, green: 115/255, blue: 221/255))
                                                         .overlay(content: {
                                                             Image(systemName: "checkmark")
                                                                 .font(.system(size: 12))
+                                                                .foregroundStyle(.white)
                                                         })
                                                         .frame(width: 24, height: 24)
                                                     
@@ -285,9 +301,9 @@ struct StakeProgressView: View {
 
 struct AchievementProgressBar: View {
     let completedCount: Int
-    let maxCount: Int = 10
+    let maxCount: Int = 20
     let fullWidth: CGFloat = UIScreen.main.bounds.width > 900 ? 960 : (UIScreen.main.bounds.width > 600 ? 760 : 300)
-    let pointsPerAchievement: CGFloat = 10
+    let pointsPerAchievement: CGFloat = 20
     
     var body: some View {
         ZStack(alignment: .leading) {

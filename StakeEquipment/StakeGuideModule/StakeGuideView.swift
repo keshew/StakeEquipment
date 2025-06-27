@@ -85,6 +85,9 @@ struct StakeGuideView: View {
         .sheet(isPresented: $isSharePresented) {
             ShareSheet(items: [stakeGuideModel.pickedGallery.text])
         }
+        .onAppear() {
+            UserDefaultsManager().markAchievement2Done()
+        }
     }
 }
 

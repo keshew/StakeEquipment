@@ -39,7 +39,7 @@ struct StakeHomeView: View {
                                                 Text("Current Level")
                                                     .Poppins(size: 14, color: Color(red: 182/255, green: 188/255, blue: 196/255))
                                                 
-                                                Text("Mid-league Player")
+                                                Text("Young Player")
                                                     .PoppinsBold(size: 20)
                                             }
                                             .padding(.leading, 5)
@@ -48,18 +48,23 @@ struct StakeHomeView: View {
                                         }
                                         .padding(.leading)
                                         
-                                        ZStack(alignment: .leading) {
-                                            Rectangle()
-                                                .fill(Color(red: 46/255, green: 69/255, blue: 90/255))
-                                                .frame(height: 8)
-                                                .cornerRadius(16)
-                                            
-                                            Rectangle()
-                                                .fill(Color(red: 45/255, green: 115/255, blue: 211/255))
-                                                .frame(width: 100, height: 8)
-                                                .cornerRadius(16)
-                                        }
-                                        .padding(.horizontal)
+//                                        ZStack(alignment: .leading) {
+//                                            Rectangle()
+//                                                .fill(Color(red: 46/255, green: 69/255, blue: 90/255))
+//                                                .frame(height: 8)
+//                                                .cornerRadius(16)
+//                                            
+//                                            Rectangle()
+//                                                .fill(Color(red: 45/255, green: 115/255, blue: 211/255))
+//                                                .frame(width: 100, height: 8)
+//                                                .cornerRadius(16)
+//                                        }
+//                                        .padding(.horizontal)
+                                        
+//                                        ProgressBarView()
+
+                                        ProgressBarView2(currentValue: CGFloat(UserDefaultsManager().getPoints()))
+                                            .padding(.horizontal)
                                         
                                         HStack {
                                             VStack {
@@ -252,3 +257,25 @@ struct StakeHomeView: View {
     StakeHomeView(selectedTab: .constant(.Home))
 }
 
+struct ProgressBarView: View {
+    @State var boolValues: [Bool] = [UserDefaultsManager().readBoolValue1(), UserDefaultsManager().readBoolValue2(), UserDefaultsManager().readBoolValue3(), UserDefaultsManager().readBoolValue4()]
+    
+    let maxWidth: CGFloat = UIScreen.main.bounds.width > 900 ? 960 : (UIScreen.main.bounds.width > 600 ? 760 : 340)
+    
+    var body: some View {
+        ZStack(alignment: .leading) {
+            Rectangle()
+                .fill(Color(red: 46/255, green: 69/255, blue: 90/255))
+                .frame(width: maxWidth, height: 8)
+                .cornerRadius(16)
+            
+            let trueCount = boolValues.filter { $0 }.count
+            let progressWidth = maxWidth * CGFloat(trueCount) / 4.0
+            
+            Rectangle()
+                .fill(Color(red: 45/255, green: 115/255, blue: 211/255))
+                .frame(width: progressWidth, height: 8)
+                .cornerRadius(16)
+        }
+    }
+}

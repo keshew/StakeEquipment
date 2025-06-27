@@ -37,19 +37,22 @@ struct StakeSettingsView: View {
                                                     .Poppins(size: 14, color: Color(red: 182/255, green: 188/255, blue: 196/255))
                                                 
                                                 HStack {
-                                                    ZStack(alignment: .leading) {
-                                                        Rectangle()
-                                                            .fill(Color(red: 46/255, green: 69/255, blue: 90/255))
-                                                            .frame(height: 8)
-                                                            .cornerRadius(16)
-                                                        
-                                                        Rectangle()
-                                                            .fill(Color(red: 45/255, green: 115/255, blue: 211/255))
-                                                            .frame(width: 50, height: 8)
-                                                            .cornerRadius(16)
-                                                    }
-                                            
-                                                    Text("60%")
+//                                                    ZStack(alignment: .leading) {
+//                                                        Rectangle()
+//                                                            .fill(Color(red: 46/255, green: 69/255, blue: 90/255))
+//                                                            .frame(height: 8)
+//                                                            .cornerRadius(16)
+//                                                        
+//                                                        Rectangle()
+//                                                            .fill(Color(red: 45/255, green: 115/255, blue: 211/255))
+//                                                            .frame(width: 50, height: 8)
+//                                                            .cornerRadius(16)
+//                                                    }
+                                                    
+                                                    ProgressBarView2(currentValue: CGFloat(UserDefaultsManager().getPoints()))
+                                                    
+                                                    let points = UserDefaultsManager().getPoints()
+                                                    Text("\(points / 5)%")
                                                         .Poppins(size: 14, color: Color(red: 182/255, green: 188/255, blue: 196/255))
                                                         .padding(.trailing, 50)
                                                         .padding(.leading, 5)
@@ -179,6 +182,27 @@ struct CustomToggleStyle: ToggleStyle {
                 .onTapGesture {
                     configuration.isOn.toggle()
                 }
+        }
+    }
+}
+
+struct ProgressBarView2: View {
+    let maxWidth: CGFloat = UIScreen.main.bounds.width > 900 ? 960 : (UIScreen.main.bounds.width > 600 ? 760 : 340)
+    let maxValue: CGFloat = 500
+    var currentValue: CGFloat
+
+    var body: some View {
+        ZStack(alignment: .leading) {
+            Rectangle()
+                .fill(Color(red: 46/255, green: 69/255, blue: 90/255))
+                .frame(height: 8)
+                .cornerRadius(16)
+
+            Rectangle()
+                .fill(Color(red: 45/255, green: 115/255, blue: 211/255))
+                .frame(width: (currentValue / maxValue) * maxWidth, height: 8)
+                .cornerRadius(16)
+                .animation(.easeInOut, value: currentValue)
         }
     }
 }
