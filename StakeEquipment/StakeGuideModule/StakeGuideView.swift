@@ -22,7 +22,7 @@ struct StakeGuideView: View {
                                     RoundedRectangle(cornerRadius: 16)
                                         .stroke(Color(red: 28/255, green: 62/255, blue: 99/255), lineWidth: 3)
                                         .overlay {
-                                            VStack {
+                                            VStack(alignment: .leading) {
                                                 HStack {
                                                     Text(stakeGuideModel.arrayOfGallery[index].title)
                                                         .PoppinsBold(size: 18)
